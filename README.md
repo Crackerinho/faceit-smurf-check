@@ -1,13 +1,13 @@
 # **Faceit Smurf Detector**
 
 ## **Description**
-A tool to help detect potential smurf accounts on Faceit by analyzing player statistics, match history, and Steam data. The tool provides evidence to help users submit a ticket for suspected smurfs.
+A tool to detect potential smurf accounts on Faceit by scanning their statistics, match history and demos. Helps report suspected smurfs by helping you to fill out the ticket submission with relevant information.
 
 ---
 
 ## **Features**
 - Fetches Faceit player data (statistics, match history, and more).
-- Retrieves Steam playtime data for Counter-Strike 2.
+- Retrieves Steam playtime data for Counter-Strike 2 (It only works if the user sets it to public/friends only).
 - Analyzes relevant player stats to detect potential smurf behavior.
 - Provides a detailed summary of a player's profile and their match data.
 - Displays a smurf detection report based on the player's activity.
@@ -22,7 +22,6 @@ A tool to help detect potential smurf accounts on Faceit by analyzing player sta
 - `requests`
 - `dotenv`
 - `rich`
-- `smurf_detector` (assumed to be your custom module)
 
 ---
 
@@ -97,20 +96,20 @@ The tool displays a comprehensive player summary, including:
 ```
 === PLAYER SUMMARY ===
 Nickname      : ExamplePlayer
-Faceit Elo    : 2200 | Skill Level: 9 (Orange)
+Faceit Elo    : 2200 | Skill Level: 10 (Red)
 Account Age   : 120 days
 Steam CS2 Hrs : 150
 
 --- Lifetime Stats ---
-Win Rate %             : 72% (Green)
-Average K/D Ratio      : 2.1 (Green)
-Average Headshots %    : 55% (Green)
-Current Win Streak     : 10 (Green)
+Win Rate %             : 72% (Red)
+Average K/D Ratio      : 2.1 (Red)
+Average Headshots %    : 55% (Red)
+Current Win Streak     : 10 (Yellow)
 
 Running smurf detection...
 
 Smurf Detection Report for ExamplePlayer:
-Verdict: Likely Smurf (Yellow)
+Verdict: Strong suspicion of smurfing. (Red)
 Flags:
   - Unusually high K/D ratio in early matches
   - High win rate in the first 50 matches
@@ -123,17 +122,6 @@ The tool caches data for up to 24 hours. If you run the script multiple times wi
 
 ---
 
-## **Contributing**
-
-Contributions are welcome! Here’s how you can contribute:
-1. Fork this repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a pull request.
-
----
-
 ## **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -142,6 +130,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## **Contact**
 
-For any questions or issues, feel free to open an issue or contact [your-email@example.com].
+For any questions or issues, feel free to open an issue or contact me on discord `fast_and_tactical`.
 
 ---
