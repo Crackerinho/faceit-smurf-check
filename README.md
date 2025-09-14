@@ -1,4 +1,4 @@
-# **Faceit Smurf Detector**
+# **Faceit Smurf Detector 1.0.0-alpha**
 
 ## **Description**
 A tool to detect potential smurf accounts on Faceit by scanning their statistics, match history and demos. Helps report suspected smurfs by helping you to fill out the ticket submission with relevant information.
