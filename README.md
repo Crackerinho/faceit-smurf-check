@@ -16,6 +16,20 @@ A tool to detect potential smurf accounts on Faceit by scanning their statistics
 
 ---
 
+## **To Do**
+- **Voice Comms Analysis**: Analyze voice comms across multiple demos to detect if multiple users are sharing the same account, based on matching voice patterns.
+- **Player Behavior Analysis**: Analyze the players behavior on different matches (e.g., playstyle, favorite gun, positioning, heatmaps etc).
+- **AI-Powered Smurf Detection**: currently researching ways to integrate AI to enhance smurf detection algorithms, making them smarter and more accurate.
+
+---
+
+## **Coming soon**
+- **Demo Fetcher**: Automatically fetch and store demo files for matches that are flagged as suspicious and 1-2 random matches that are not flagged for the baseline.
+- **Demo Parser**: Implement a demo parser to analyze the demo files and extract additional player data (like movement, aim precision, strategies etc).
+- **Smurf Detection Improvement**: Improve smurf detection logic.
+
+---
+
 ## **Requirements**
 
 - Python 3.7+
