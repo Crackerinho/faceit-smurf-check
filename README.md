@@ -94,7 +94,7 @@ The tool displays a comprehensive player summary, including:
 
 1. **Run the script**:
    ```bash
-   python faceit_smurf_detector.py
+   python main.py
    ```
 
 2. **Input player nickname**: The script will prompt you to enter a Faceit nickname.
@@ -109,24 +109,22 @@ The tool displays a comprehensive player summary, including:
 
 ```
 === PLAYER SUMMARY ===
-Nickname      : ExamplePlayer
-Faceit Elo    : 2200 | Skill Level: 10 (Red)
-Account Age   : 120 days
-Steam CS2 Hrs : 150
+Nickname      : Player
+Faceit Elo    : 1529 | Skill Level: 7
+Account Age   : 1115 days
+Steam CS2 Hrs : 764.75
 
 --- Lifetime Stats ---
-Win Rate %             : 72% (Red)
-Average K/D Ratio      : 2.1 (Red)
-Average Headshots %    : 55% (Red)
-Current Win Streak     : 10 (Yellow)
+Win Rate %               : 54
+Average K/D Ratio        : 1.17
+Average Headshots %      : 48
+Current Win Streak       : 0
 
 Running smurf detection...
 
-Smurf Detection Report for ExamplePlayer:
-Verdict: Strong suspicion of smurfing. (Red)
-Flags:
-  - Unusually high K/D ratio in early matches
-  - High win rate in the first 50 matches
+Smurf Detection Report for Player:
+Verdict: No strong signs of smurfing.
+No suspicious patterns found.
 ```
 
 ---
