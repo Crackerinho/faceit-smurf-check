@@ -60,7 +60,7 @@ A tool to detect potential smurf accounts on Faceit by scanning their statistics
 
 4. Run the script:
    ```bash
-   python faceit_smurf_detector.py
+   python main.py
    ```
 
 ---
